@@ -3579,7 +3579,7 @@ static void BattleIntroPrintWildMonAttacked(void)
 
 static void BattleIntroQuickRun(void) {
   if (gBattleControllerExecFlags == 0) {
-    if (JOY_HELD(DPAD_RIGHT)) {
+    if (JOY_HELD(R_BUTTON)) {
       if (!IsRunningFromBattleImpossible() && TryRunFromBattle(gBattlerAttacker)) {
         gBattleMainFunc = HandleEndTurn_RanFromBattle;
         return;

@@ -3289,7 +3289,7 @@ static void Cmd_getexp(void)
                     holdEffect = ItemId_GetHoldEffect(item);
             }
 
-            calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7;
+            calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level * 2;
 
             if (gSaveBlock2Ptr->expShare) // exp share is turned on
             {
